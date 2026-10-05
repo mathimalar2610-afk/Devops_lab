@@ -1,0 +1,7 @@
+ansible --version
+
+# hosts.ini
+localhost ansible_connection=local
+
+ansible-inventory -i hosts.ini --list
+ansible-playbook -i hosts.ini setup.yml
